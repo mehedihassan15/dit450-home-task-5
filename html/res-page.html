@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="Mehedi Hassan">
+    <meta name="description" content="Home Task 5">
+    <link rel="stylesheet" href="../css/res-page.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>Password Change | Omi Education</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <!-- header-section -->
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="logo.png">
+                </a>
+            </div>
+            <div class="title">
+                <h1>Omi Education</h1>
+            </div>
+        </header>
+
+
+
+
+        <!-- main-section -->
+        <main>
+            <article class="form-container">
+
+                <section class="f-header">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo.png" class="b-logo-img">
+                    </a>
+                    <h1>Change Password</h1>
+                    <section class="slt-em">
+                        <select name="slt-em" id="slt-em">
+                            <option value="slt-em">dummyemail@gmail.com</option>
+                        </select>
+                    </section>
+                </section>
+
+                <section class="f-body">
+                    <h4>Create a strong password</h4>
+                    <p>Create a new, strong password that you don't use for other websites.</p>
+
+                    <section class="f-body-form">
+
+                        <form action="../php/res-email-pass.php" method="post" id="res-email-pass">
+                            <label for="chng-pass"></label>
+                            <input type="password" name="chng-pass" id="chng-pass" placeholder="enter new password"
+                                minlength="8" pattern="[a-zA-Z0-9]+" required>
+                            <input type="password" name="chng-pass" id="chng-pass" placeholder="confirm new password"
+                                pattern="[a-zA-Z0-9]+" minlength="8" required>
+                        </form>
+                        <section class="chng-pass-check">
+                            <input type="checkbox" name="chng-pass" id="chng-pass"> <span>Remember Me</span>
+                        </section>
+                    </section>
+                </section>
+
+
+
+                <section class="f-footer">
+                    <input type="submit" value="Change Password" form="res-email-pass"></input>
+                </section>
+
+            </article>
+        </main>
+        <!-- main-section-end -->
+
+
+
+
+        <footer>
+            <!-- no-footer-used -->
+        </footer>
+    </section>
+
+    <script src="../javascript/security.js"></script>
+</body>
+
+</html>

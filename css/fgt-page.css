@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(210deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 15px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* header-section */
+img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 15px;
+}
+
+.title {
+    padding: 35px 0;
+    font-size: 190%;
+    color: #0e7dec;
+}
+
+/* main-section */
+main {
+    position: relative;
+    height: 75%;
+}
+
+.form-section {
+    border: 2px solid rgb(110, 187, 231);
+    border-radius: 10px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 15px 20px lightslategray;
+}
+
+p {
+    font-weight: 85%;
+    padding: 0 10px;
+}
+
+p.title {
+    color: black;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+input {
+    border: none;
+    height: 35px;
+    width: 280px;
+    border-bottom: 2px solid gray;
+    color: darkgray;
+    background-color: transparent;
+    outline: none;
+    margin: 20px auto;
+    padding: 0 10px;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+
+input::placeholder {
+    color: darkgray;
+}
+
+#input {
+    padding-left: 25px;
+}
+
+hr {
+    margin: 25px auto;
+    border: 1px solid rgb(207, 94, 94);
+    border-bottom: none;
+    width: 90%;
+}
+
+.btn-div {
+    float: right;
+}
+
+.btn {
+    border: none;
+    font-size: 20px;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    color: #312e2e;
+    background: #8ec5fc;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 10px rgb(65, 59, 59);
+    color: whitesmoke;
+}
+
+/* div-clear */
+.div-clear {
+    clear: both;
+}
+
+/* animation-section */
+@media screen and (max-width: 535px) {
+    /* header-section */
+    img {
+        width: 100px;
+        height: 100px;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .title {
+        font-size: 173%;
+        padding: 0 15px;
+    }
+
+    /* main-section */
+    .form-section {
+        width: 400px;
+    }
+
+    input {
+        border: none;
+        height: 30px;
+        border-bottom: 2px solid gray;
+    }
+
+    #input {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    /* header-section */
+    img {
+        width: 100px;
+        height: 100px;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .title {
+        font-size: 173%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* header-section */
+    img {
+        width: 80px;
+        height: 80px;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .title {
+        font-size: 150%;
+        padding: 0 15px;
+    }
+
+    /* main-section */
+    main {
+        height: 65%;
+    }
+
+    .form-section {
+        width: 300px;
+    }
+
+    input {
+        height: 25px;
+        width: 200px;
+    }
+
+    #input {
+        padding-left: 13px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    /* header-section */
+    img {
+        width: 80px;
+        height: 80px;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .title {
+        font-size: 150%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    /* header-section */
+    img {
+        width: 80px;
+        height: 80px;
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .title {
+        font-size: 130%;
+        padding: 0 15px;
+    }
+
+    /* main-section */
+    main {
+        height: 65%;
+    }
+
+    .form-section {
+        width: 270px;
+    }
+
+    input {
+        height: 25px;
+        width: 180px;
+    }
+
+    #input {
+        padding-left: 13px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    /* header-section */
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title {
+        font-size: 90%;
+    }
+
+    /* main-section */
+    main {
+        height: 65%;
+    }
+
+    .form-section {
+        width: 225px;
+    }
+
+    input {
+        height: 20px;
+        width: 155px;
+    }
+
+    input {
+        font-size: small;
+    }
+
+    #input {
+        padding-left: 10px;
+    }
+
+    hr {
+        margin: 15px auto;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}

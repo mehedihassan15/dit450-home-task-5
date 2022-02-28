@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="Mehedi Hassan">
+    <meta name="description" content="Home Task 5">
+    <link rel="stylesheet" href="../css/reg-page.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>Sign Up | Omi Education</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <!-- header-section -->
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="logo.png">
+                </a>
+            </div>
+            <div class="title">
+                <h1>Omi Education</h1>
+            </div>
+        </header>
+
+
+        <div class="div-clear"></div>
+
+        <!-- main-section -->
+        <main>
+            <section class="form-section">
+                <!-- form-section -->
+                <form action="../php/reg-email.php" method="get" name="reg-form" autocomplete="on">
+
+                    <!-- parent-fieldset -->
+                    <fieldset class="parent-fieldset">
+
+                        <p class="wel-msg">Are you a new comer? Please...</p>
+
+                        <p class="reg">Register</p>
+
+                        <!-- child-fieldset -->
+                        <fieldset class="fieldset-child">
+                            <legend><b>Personalia</b></legend>
+                            <div>
+                                <label for="fname">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="fname" id="fname" placeholder="first & middle name" required
+                                    autofocus>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="lname">Last
+                                    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="lname" id="lname" placeholder="surname" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="father-name">Father Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="father-name" id="father-name" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="mother-name">Mother Name:&nbsp;&nbsp;</label>
+                                <input type="text" name="mother-name" id="mother-name" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="tel">Phone Number:</label>
+                                <input type="tel" name="tel" id="tel" placeholder="01***-******"
+                                    pattern="[0-9]{5}-[0-9]{6}" formmethod="post" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="dob">Date of Birth:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="date" name="dob" id="dob" min="2000-01-01" max="2100-12-31" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="pro-img">Profile Image:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="file" name="pro-img" id="pro-img" formmethod="post" accept="image/*"
+                                    required>
+                            </div>
+                            <br>
+                            <div class="mbl-radio">
+                                <label for="gender">Gender:&nbsp;&nbsp;</label>
+                                <input type="radio" name="gender" id="gender" value="male" required> <span>Male</span>
+                                <input type="radio" name="gender" id="gender" value="female"> <span>Female</span>
+                                <input type="radio" name="gender" id="gender" value="other"> <span>Other</span>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="rlgn">Religion:</label>
+                                <input type="radio" name="rlgn" id="rlgn" value="muslim" required> <span>Islam</span>
+                                <input type="radio" name="rlgn" id="rlgn" value="hindu"> <span>Hindu</span>
+                                <input type="radio" name="rlgn" id="rlgn" value="christian"> <span>Christian</span>
+                                <input type="radio" name="rlgn" id="rlgn" value="Boddho"> <span>Boddho</span>
+                                <input type="radio" name="rlgn" id="rlgn" value="others"> <span>Others</span>
+                            </div>
+
+                        </fieldset>
+                        <br>
+
+                        <!-- login-fieldset -->
+                        <fieldset class="fieldset-child">
+                            <legend><b>Login Information</b></legend>
+
+                            <div>
+                                <label for="username">User
+                                    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="username" id="username" placeholder="alphanumeric"
+                                    pattern="[a-zA-Z]{+}[0-9]{+}" formmethod="post" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label
+                                    for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="email" name="email" id="email" placeholder="valid gmail only"
+                                    formmethod="post" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="pass">Create Password:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="password" name="pass" id="pass" placeholder="alphanumeric & characters"
+                                    pattern="[a-z]{1,+}[A-Z]{1,+}[0-9]{1,+}" formmethod="post" minlength="8" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="pass">Confirm Password:</label>
+                                <input type="password" name="pass" id="pass" placeholder="re-type password"
+                                    pattern="[a-z]{1,+}[A-Z]{1,+}[0-9]{1,+}" formmethod="post" minlength="8" required>
+                            </div>
+
+                        </fieldset>
+                        <br>
+
+                        <!-- course-fieldset -->
+                        <fieldset class="fieldset-child">
+                            <legend><b>Course Selection</b></legend>
+
+                            <div>
+                                <label for="course">Select your course:</label><br>
+                                <input type="checkbox" name="course" id="course" value="Bangla">
+                                <span>Bangla</span>
+                                <input type="checkbox" name="course" id="course" value="English"> <span>English</span>
+                                <input type="checkbox" name="course" id="course" value="Math" checked> <span>Math</span>
+                                <input type="checkbox" name="course" id="course" value="Physics"> <span>Physics</span>
+                                <input type="checkbox" name="course" id="course" value="Chemistry">
+                                <span>Chemistry</span>
+                                <input type="checkbox" name="course" id="course" value="Biology" checked>
+                                <span>Biology</span>
+                                <input type="checkbox" name="course" id="course" value="ICT"> <span>ICT</span>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="batch">Select your Batch:</label>
+                                <select name="time" id="time" required>
+                                    <optgroup label="Morning Batch">
+                                        <option value="morning-7:00am">Morning 7:00 am</option>
+                                        <option value="morning-8:30am">Morning 8:30 am</option>
+                                        <option value="morning-10:00am">Morning 10:00 am</option>
+                                    </optgroup>
+                                    <optgroup label="Noon Batch">
+                                        <option value="noon-1:00pm">Noon 1:00 pm</option>
+                                        <option value="noon-2:00pm">Noon 2:00 pm</option>
+                                        <option value="noon-3:00pm" selected>Noon 3:00 pm</option>
+                                    </optgroup>
+                                    <optgroup label="Afternoon Batch">
+                                        <option value="afternoon-4:00pm">Afternoon 4:00pm</option>
+                                        <option value="afternoon-5:00pm">Afternoon 5:00pm</option>
+                                    </optgroup>
+                                    <optgroup label="Evening Batch">
+                                        <option value="evening-7:00pm">Evening 7:00 pm</option>
+                                        <option value="evening-8:30pm">Evening 8:30 pm</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="class-method">Select class Method:</label>
+                                <select name="class" id="class" required>
+                                    <option value="online">On Campus</option>
+                                    <option value="offline" selected>Off Campus</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <br>
+
+                        <!-- link-section -->
+                        <div class="btn-container">
+                            <label for="btn"></label>
+                            <input type="submit" class="btn" value="Register">
+                            <button type="reset" class="btn"
+                                onclick="alert('Would you like to clear everything?')">Clear</button>
+                            <!-- <input type="reset" class="btn" value="Clear"> -->
+                        </div>
+
+                    </fieldset>
+
+                </form>
+            </section>
+        </main>
+        <!-- main-section-end-->
+
+
+
+
+        <footer>
+            <!-- no-footer-used -->
+        </footer>
+    </section>
+
+    <script src="../javascript/security.js"></script>
+
+</body>
+
+</html>

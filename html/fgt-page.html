@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="Mehedi Hassan">
+    <meta name="description" content="Home Task 5">
+    <link rel="stylesheet" href="../css/fgt-page.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>Forgetten Password | Omi Education</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- header-section -->
+        <header>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="logo.png">
+                </a>
+            </div>
+            <div class="title">
+                <h1>Omi Education</h1>
+            </div>
+        </header>
+
+
+        <div class="div-clear"></div>
+
+        <!-- main-section -->
+        <main>
+            <section class="form-section">
+                <form action="../php/res-email-pass.php" method="get">
+                    <div>
+                        <p class="title">Enter your Email</p>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <p>Please enter your email address to search for your account. If matched you will automatically
+                            redirect to the reset
+                            password page.</p>
+                    </div>
+
+                    <div id="input">
+                        <input type="email" name="email" id="email" placeholder="dummyemail@gmail.com" maxlength="40"
+                            required>
+                    </div>
+
+                    <hr>
+
+                    <div class="btn-div">
+                        <button type="reset" class="btn">Clear</button>
+                        <button type="submit" class="btn" onclick="window.open('./res-page.html')">Search</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!-- main-section-end -->
+
+
+
+
+        <footer>
+            <!-- no-footer-used -->
+        </footer>
+    </section>
+
+    <script src="../javascript/security.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(210deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* header-section */
+
+header {
+    display: flex;
+    flex-flow: wrap row;
+}
+img {
+    width: 130px;
+    height: 130px;
+    float: left;
+    padding: 15px;
+}
+
+.title {
+    padding: 35px 0;
+    font-size: 190%;
+    color: #0e7dec;
+}
+
+/* main-section */
+/* main-section */
+/* main-section */
+/* main-section */
+/* main-section */
+/* main-section */
+/* main-section */
+
+.form-section {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+form {
+    max-width: 600px;
+    height: 100%;
+}
+
+.parent-fieldset {
+    padding: 15px;
+    outline: none;
+    border: none;
+    border: 2px solid red;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: inset 5px 10px 30px #000000;
+}
+
+.fieldset-child {
+    border: none;
+    outline: none;
+    border: 2px solid tomato;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-image: linear-gradient(30deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.wel-msg {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.reg {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 190%;
+    margin-top: 10px;
+}
+label {
+    font-weight: bolder;
+}
+
+input::placeholder {
+    color: rgb(134, 98, 98);
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+input[type="text"],
+[type="password"],
+[type="email"],
+[type="tel"] {
+    border: none;
+    outline: none;
+    border: 2px solid rgb(80, 70, 70);
+    border-radius: 35px;
+    padding: 5px;
+    width: 250px;
+    text-indent: 10px;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(179, 190, 201);
+}
+
+input[type="text"]:hover,
+[type="password"]:hover,
+[type="email"]:hover,
+[type="tel"]:hover {
+    border: #4271a3 2px solid;
+}
+
+input[type="text"]:focus,
+[type="password"]:focus,
+[type="email"]:focus,
+[type="tel"]:focus {
+    box-shadow: 1px 1px 10px rgb(65, 59, 59);
+}
+
+input[type="date"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid teal;
+}
+
+#pro-img::-webkit-file-upload-button {
+    border: none;
+    background-color: red;
+    display: none;
+}
+
+#pro-img::before {
+    content: "choose a photo";
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 2px solid #0e7dec;
+    border-radius: 10px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+#pro-img:hover::before {
+    border-color: rgb(218, 59, 59);
+}
+
+input[type="radio"]:checked + span {
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked + span {
+    font-weight: bold;
+}
+
+input[type="radio"]:hover,
+[type="checkbox"]:hover {
+    box-shadow: 1px 1px 10px rgb(65, 59, 59);
+}
+
+select {
+    border: none;
+    outline: none;
+    background-color: rgb(154, 175, 196);
+
+    padding: 5px 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+select option,
+optgroup {
+    background-color: rgb(223, 194, 194);
+}
+
+select option {
+    font-weight: 600;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: end;
+}
+
+.btn {
+    width: 85px;
+    background: rgb(154, 175, 196);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    margin: auto 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 1px 1px 10px rgb(65, 59, 59);
+    color: green;
+}
+
+button:hover {
+    box-shadow: 1px 1px 10px rgb(65, 59, 59);
+    color: red;
+}
+
+/* div-clear */
+.div-clear {
+    clear: both;
+}
+
+/* animation-section */
+@media screen and (max-width: 550px) {
+    header {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    header > div {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .logo,
+    .title {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    input[type="checkbox"],
+    [type="radio"] {
+        display: flex;
+        flex: 25%;
+        flex-flow: wrap column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn {
+        width: 85px;
+        padding: 5px 10px;
+        margin: auto 5px;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .title {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .title {
+        font-size: 130%;
+    }
+}
+
+@media screen and (max-width: 286px) {
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    .title {
+        font-size: 100%;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="Mehedi Hassan">
+    <meta name="description" content="Home Task 5">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="./images/logo.png">
+    <title>Login Page | Omi Education</title>
+</head>
+
+<body>
+
+    <!-- header-section-start -->
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="logo.png">
+        </a>
+    </header>
+    <!-- header-section-end -->
+
+    <!-- main-section-start -->
+    <main>
+
+        <div class="container">
+            <!-- left-section -->
+
+            <div class="left-div">
+                <h1>Omi Education</h1>
+                <p>Omi Education is one of the largest online education platform in Bangladesh.</p>
+            </div>
+
+
+            <!-- right-section -->
+
+            <div class="right-div">
+                <form action="./php/account.php" method="post">
+                    <div class="message">
+                        <p>Already a register user? Please...</p>
+                    </div>
+
+                    <section class="info-section">
+                        <div>
+                            <label for="uname"></label>
+                            <input type="email" name="uname" id="uname" placeholder="email address" size="35%" required>
+                        </div>
+
+                        <div>
+                            <label for="pass"></label>
+                            <input type="password" name="pass" id="pass" placeholder="password" pattern="[a-zA-Z0-9]{+}"
+                                minlength="8" size="35%" required>
+                        </div>
+                        <div class="checkbox">
+                            <label for="rem-me"></label>
+                            <input type="checkbox" name="rem-me" id="rem-me"> <span>Remember me</span>
+                        </div>
+                        <div class="btn">
+                            <label for="login"></label>
+                            <input type="submit" name="login" id="login" value="Log In">
+                        </div>
+                    </section>
+
+                    <div class="link">
+                        <a href="./html/fgt-page.html" target="_blank" rel="noopener noreferrer">Forgetten password?</a>
+
+                        <hr>
+
+                        <a href="./html/reg-page.html" class="new-account" rel="noopener noreferrer">Create New
+                            Account</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- main-section-end -->
+
+
+
+
+
+    <footer>
+        <!-- no-footer-used -->
+    </footer>
+
+    <script src="./javascript/security.js"></script>
+</body>
+
+</html>
